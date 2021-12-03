@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lights</title>
+
+  <link rel="shortcut icon" href="img/logo-48.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="fonts/font-awesome/css/all.css">
+
+  <link rel="manifest" href="manifest.json">
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=5ea4b59c-6b80-444b-b674-73ba54503fcf&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__logo fas fa-traffic-light fa-2x"></div>
+      <div class="header__text-logo">lights</div>
+    </header>
+
+    <div class="connection-error-screen">
+      <div class="connection-error-screen-content">
+        <div class="connection-error-screen__img fal fa-wifi-slash fa-6x">
+
+        </div>
+
+        <p class="connection-error-screen__text">Отсутствует подключение к интернету</p>
+
+        <button class="connection-error-screen__reload-but">Обновить</button>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <div class="start-screen">
+        <div class="start-screen-content">
+          <h3 class="start-screen__title">Добро пожаловать!</h3>
+          <p class="start-screen__text">
+            Укажите место на карте в котором был обнаружен неисправный светофор, сломанный дорожный знак и т.д.
+          </p>
+          <button class="start-screen__but">Начать</button>
+        </div>
+      </div>
+
+      <div class="map-screen">
+        <div class="map-screen-content" id='map'>
+        </div>
+
+        <button class="map-screen__but">Продолжить</button>
+      </div>
+
+      <div class="check-screen">
+        <div class="check-screen-content">
+          <h3 class="check-screen__title">Выберите тип проблемного объекта</h3>
+
+          <form action="" method="get" class="check-screen__form">
+            <label class="check-screen__radio"><input type="radio" name="break-type" id="">Светофор</label>
+            <label class="check-screen__radio"><input type="radio" name="break-type" id="">Дорожный знак</label>
+            <label class="check-screen__radio"><input type="radio" name="break-type" id="">Лежачий полицейский</label>
+            <label class="check-screen__radio"><input type="radio" name="break-type" id="check-screen__radio_another">Другое</label>
+
+            <input type="text" name="" id="" class="check-screen__text-input" disabled>
+          </form>
+
+          <button class="check-screen__but">Продолжить</button>
+        </div>
+      </div>
+
+      <div class="end-screen">
+        <div class="end-screen-content">
+          <h3 class="end-screen__title">Спасибо за помощь!</h3>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/service-worker.js"></script>
+</body>
+</html>
