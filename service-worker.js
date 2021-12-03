@@ -1,9 +1,9 @@
 const cacheName = 'cache-v1';
 const assets = [
   'index.html',
-  'js',
-  'styles',
-  'fonts'
+  'js/main.js',
+  'styles/style.css',
+  'styles/null.css',
 ]
 
 
