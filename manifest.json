@@ -6,6 +6,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "start_url": ".",
+  "scope": ".",
   "icons": [
     {
       "src": "/img/logo-48.png",
