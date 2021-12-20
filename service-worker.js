@@ -1,17 +1,17 @@
 const cacheName = 'cache-v1';
-// const assets = [
-//   'index.html',
-//   'js/main.js',
-//   'styles/style.css',
-//   'styles/null.css',
-// ]
-
 const assets = [
-  '/lights/index.html',
-  '/lights/js/main.js',
-  '/lights/styles/style.css',
-  '/lights/styles/null.css',
+  './index.html',
+  './js/main.js',
+  './styles/style.css',
+  './styles/null.css',
 ]
+
+// const assets = [
+//   '/lights/index.html',
+//   '/lights/js/main.js',
+//   '/lights/styles/style.css',
+//   '/lights/styles/null.css',
+// ]
 
 
 
