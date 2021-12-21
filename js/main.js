@@ -85,6 +85,7 @@ function connectionTest() {
 
 // map
 
+// ymaps = window.ymaps;
 ymaps.ready(init);
 
 function init() {
