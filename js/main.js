@@ -47,6 +47,12 @@ function connectionTest() {
     const checkForm = document.querySelector('.check-screen__form');
     const radioButtons = document.querySelectorAll('.check-screen__radio input');
     const nextBtn = document.querySelector('.check-screen__but');
+    const backBtn = document.querySelector('.end-screen__back-btn');
+    
+    backBtn.addEventListener('click', () => {
+      endScreen.style.display = 'none';
+      startScreen.style.display = 'flex';
+    })
 
     let formValidate = false;
 
@@ -68,6 +74,8 @@ function connectionTest() {
         endScreen.style.display = 'block'
       }
     })
+    
+    
 
     // ---
     
