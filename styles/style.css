@@ -244,14 +244,12 @@ body {
 
 .end-screen {
   height: 100%;
-
   display: none;
 }
 .end-screen-content {
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   margin: 150px 0 0 0;
 }
