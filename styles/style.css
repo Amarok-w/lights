@@ -250,13 +250,25 @@ body {
 .end-screen-content {
   height: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
   margin: 150px 0 0 0;
 }
 .end-screen__title {
   text-align: center;
   font-size: 24px;
   color: #023047;
+}
+
+.end-screen__back-btn {
+  padding: 20px 75px;
+  background: #00b4d8;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 100px;
+  box-shadow: 5px 5px 10px #00000025;
 }
 
 /* end-screen */
