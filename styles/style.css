@@ -165,16 +165,21 @@ body {
 .map-screen {
   height: 100%;
   /* width: 100%; */
-
   display: none;
+
 }
 .map-screen-content {
-  height: 90%;
+  height: 100%;
   width: 100%;
 }
 .map-screen__but {
-  height: 10%;
-  width: 100%;
+  width: 60%;
+  height: 65px;
+  border-radius: 100px  ;
+  position: absolute;
+  left: 20%;
+  bottom: 55px;
+  z-index: 10;
   background: #00b4d8;
   color: #fff;
   font-size: 24px;
@@ -188,7 +193,6 @@ body {
 
 .check-screen {
   height: 100%;
-
   display: none;
 }
 .check-screen-content {
@@ -223,18 +227,25 @@ body {
 }
 .check-screen__text-input {
   font-size: 24px;
-  padding: 5px;
+  padding: 6px;
   border-radius: 5px;
-  box-shadow: 1px 1px 5px #00000025;
+  /* box-shadow: 1px 1px 5px #00000025; */
+  background: #e5e5e5;
 }
 .check-screen__but {
-  margin: 125px 0 0 0;
-  height: 10%;
-  width: 100%;
+
   background: #00b4d8;
   color: #fff;
   font-size: 24px;
   font-weight: bold;
+
+  width: 60%;
+  height: 65px;
+  border-radius: 100px  ;
+  position: absolute;
+  left: 20%;
+  bottom: 55px;
+  z-index: 10;
 }
 
 /* check-screen */
