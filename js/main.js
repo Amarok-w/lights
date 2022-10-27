@@ -5,8 +5,15 @@ window.addEventListener('load', async () => {
 })
 
 
-let isConnect = navigator.onLine;
+let isConnect = isOnline();
 let coords;
+
+window.addEventListener('online', isOnline);
+window.addEventListener('offline', isOnline);
+function isOnline(event) {
+  var condition = navigator.onLine ? "online" : "offline";
+  return condition;
+}
 
 function connectionTest() {
 
@@ -72,15 +79,22 @@ function connectionTest() {
       if (formValidate) {
         checkScreen.style.display = 'none'
         endScreen.style.display = 'block'
+        // let inputForm = document.querySelector('.check-screen__form');
+        let isCheck;
+        let elements = document.querySelectorAll('.check-screen__radio');
+        let elementsInput = document.querySelectorAll('.check-screen__radio__input')
+        for (let i = 0; i < elementsInput.length; i++) {
+          if (elementsInput[i].checked) {
+            isCheck = elements[i].childNodes[2].textContent;
+          }
+        }
+
+        formResult(coordForLog, isCheck);
       }
     })
     
-    
-
     // ---
     
-
-
 
   }
 
@@ -90,6 +104,22 @@ function connectionTest() {
     connectionTrue();
   }
 }
+
+let coordForLog;
+function formResult(coords, type) {
+
+
+    let logInfo = {
+      x: coords[0],
+      y: coords[1],
+      type: type
+    }
+
+  console.log(logInfo);
+
+}
+
+
 
 // map
 
@@ -121,6 +151,9 @@ function init() {
         getAddress(myPlacemark.geometry.getCoordinates());
       });
     }
+    // suka 
+    coordForLog = coords;
+
     getAddress(coords);
   });
 
